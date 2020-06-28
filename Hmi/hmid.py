@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from Comunicacion.modbus import ClientModbus
+from Modbus.client import ClientModbus
 
 
 class Ui_MainWindow(object):
@@ -112,8 +112,8 @@ class Ui_MainWindow(object):
         self.actionTCP.setText(_translate("MainWindow", "TCP"))
         self.actionIP.setText(_translate("MainWindow", "IP"))
 
-    def modbus(self, ip, port):
-        client = ClientModbus(ip, port)
+    def modbus(self, ip):
+        client = ClientModbus(ip)
         print(client.connect())
 
 if __name__ == "__main__":

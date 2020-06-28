@@ -8,6 +8,6 @@ if __name__ == '__main__':
 	MainWindow = QtWidgets.QMainWindow()
 	ui = Ui_MainWindow()
 	ui.setupUi(MainWindow)
-	ui.modbus("192.168.10.2", 502)
+	ui.modbus("192.168.10.2")
 	MainWindow.show()
 	sys.exit(app.exec_())

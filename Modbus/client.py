@@ -1,5 +1,4 @@
 from pymodbus.client.sync import ModbusTcpClient
-import time
 
 MODBUS_PORT = 502
 

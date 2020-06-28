@@ -13,5 +13,3 @@ class ClientModbus(ModbusTcpClient):
 
 	def write(self, addr, data):
 		rq = self.write_coil(addr, data, unit=0x6)
-
-client = ClientModbus("192.168.10.2")
